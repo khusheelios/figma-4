@@ -11,7 +11,7 @@ import SwiftyJSON
 class ViewController: UIViewController {
     
     @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var firstbackView: UIView!
     @IBOutlet weak var secondView: UIView!
    
     override func viewDidLoad() {
@@ -29,15 +29,14 @@ class ViewController: UIViewController {
                     let json = try! JSON(data: data)
                     print("JsonData :",json.count)
                   
-                    let headerColor = json["global"]["header-color"]["value"]
-                    let nameColor = json["global"]["name-text-color"]["value"]
-                    let addressColor = json["global"]["address-name-color"]["value"]
-                    let MobileColor = json["global"]["mobile-color"]["value"]
-                    
+                    let headerColor = json["global"]["header_color"]["value"]
+                    let firstView = json["global"]["first_view_color"]["value"]
+                    let seocndView = json["global"]["second_view_color"]["value"]
+                 
                     
                     headerView.backgroundColor = UIColor(hexString: headerColor.rawValue as! String)
-                    firstView.backgroundColor = UIColor(hexString: headerColor.rawValue as! String)
-                    secondView.backgroundColor = UIColor(hexString: headerColor.rawValue as! String)
+                    firstbackView.backgroundColor = UIColor(hexString: firstView.rawValue as! String)
+                    secondView.backgroundColor = UIColor(hexString: seocndView.rawValue as! String)
         }
     }
 
