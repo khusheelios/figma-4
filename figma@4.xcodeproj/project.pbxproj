@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740DCD31C1C45B0862E2CC64 /* Pods_figma_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12AF14668D1716832493A5F /* Pods_figma_4.framework */; };
 		BD946923284A0C620080BA95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD946922284A0C620080BA95 /* AppDelegate.swift */; };
 		BD946925284A0C620080BA95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD946924284A0C620080BA95 /* SceneDelegate.swift */; };
 		BD946927284A0C620080BA95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD946926284A0C620080BA95 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		BD94693A284A0C630080BA95 /* figma_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD946939284A0C630080BA95 /* figma_4Tests.swift */; };
 		BD946944284A0C630080BA95 /* figma_4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD946943284A0C630080BA95 /* figma_4UITests.swift */; };
 		BD946946284A0C630080BA95 /* figma_4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD946945284A0C630080BA95 /* figma_4UITestsLaunchTests.swift */; };
+		BD946953284A101B0080BA95 /* tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = BD946952284A101B0080BA95 /* tokens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52569C53C71F55722D88F61D /* Pods-figma@4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-figma@4.release.xcconfig"; path = "Target Support Files/Pods-figma@4/Pods-figma@4.release.xcconfig"; sourceTree = "<group>"; };
 		BD94691F284A0C620080BA95 /* figma@4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "figma@4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD946922284A0C620080BA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD946924284A0C620080BA95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		BD94693F284A0C630080BA95 /* figma@4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "figma@4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD946943284A0C630080BA95 /* figma_4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = figma_4UITests.swift; sourceTree = "<group>"; };
 		BD946945284A0C630080BA95 /* figma_4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = figma_4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD946952284A101B0080BA95 /* tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tokens.json; sourceTree = "<group>"; };
+		C12AF14668D1716832493A5F /* Pods_figma_4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_figma_4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7DD9C37D5919D7C5A8247A /* Pods-figma@4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-figma@4.debug.xcconfig"; path = "Target Support Files/Pods-figma@4/Pods-figma@4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740DCD31C1C45B0862E2CC64 /* Pods_figma_4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +83,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A6326F6B635559F7DE2137C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED7DD9C37D5919D7C5A8247A /* Pods-figma@4.debug.xcconfig */,
+				52569C53C71F55722D88F61D /* Pods-figma@4.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F3D478CFA5E3E86B93F8AFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C12AF14668D1716832493A5F /* Pods_figma_4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD946916284A0C620080BA95 = {
 			isa = PBXGroup;
 			children = (
+				BD946952284A101B0080BA95 /* tokens.json */,
 				BD946921284A0C620080BA95 /* figma@4 */,
 				BD946938284A0C630080BA95 /* figma@4Tests */,
 				BD946942284A0C630080BA95 /* figma@4UITests */,
 				BD946920284A0C620080BA95 /* Products */,
+				5A6326F6B635559F7DE2137C /* Pods */,
+				7F3D478CFA5E3E86B93F8AFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD946949284A0C630080BA95 /* Build configuration list for PBXNativeTarget "figma@4" */;
 			buildPhases = (
+				88F7595A9187567AF92C2605 /* [CP] Check Pods Manifest.lock */,
 				BD94691B284A0C620080BA95 /* Sources */,
 				BD94691C284A0C620080BA95 /* Frameworks */,
 				BD94691D284A0C620080BA95 /* Resources */,
+				D7F1930A2A78263B741FB7FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +264,7 @@
 				BD94692F284A0C630080BA95 /* LaunchScreen.storyboard in Resources */,
 				BD94692C284A0C630080BA95 /* Assets.xcassets in Resources */,
 				BD94692A284A0C620080BA95 /* Main.storyboard in Resources */,
+				BD946953284A101B0080BA95 /* tokens.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +283,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88F7595A9187567AF92C2605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-figma@4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F1930A2A78263B741FB7FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-figma@4/Pods-figma@4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-figma@4/Pods-figma@4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-figma@4/Pods-figma@4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD94691B284A0C620080BA95 /* Sources */ = {
@@ -432,6 +505,7 @@
 		};
 		BD94694A284A0C630080BA95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7DD9C37D5919D7C5A8247A /* Pods-figma@4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +533,7 @@
 		};
 		BD94694B284A0C630080BA95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52569C53C71F55722D88F61D /* Pods-figma@4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
